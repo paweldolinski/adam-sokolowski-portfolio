@@ -1,0 +1,67 @@
+.contact {
+    background: url(../img/_DSC3764%20cz.JPG);
+    background-size: cover;
+    height: 86vh;
+    background-position-y: calc(100% - -59px);
+    background-repeat: no-repeat;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        p {
+            margin-bottom: 3px;
+        }
+
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+      
+
+        input {
+            height: 44px;
+            width: 100%;
+            border: solid black 2px;
+              padding: 10px 20px;
+
+            &:active {
+                outline: none;
+            }
+
+
+        }
+
+    }
+
+    &__message {
+        textarea {
+            height: 68%;
+            width: 100%;
+            border: solid black 2px;
+            padding: 10px 20px;
+
+            &:active {
+                outline: none;
+            }
+        }
+    }
+
+    &__message {
+        width: 45%;
+    }
+
+    &__btn {
+        margin-top: 60px;
+
+        button {
+            border: solid black 2px;
+            padding: 5px 35px;
+            cursor: pointer;
+
+        }
+    }
+
+}

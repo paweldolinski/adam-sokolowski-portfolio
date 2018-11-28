@@ -1,0 +1,38 @@
+.home {
+    background: url(../img/home.jpg);
+    background-size: cover;
+      height: 86vh;
+
+    &__caption {
+        position: absolute;
+        bottom: 185px;
+        right: 190px;
+
+
+    }
+
+    h1 {
+        display: block;
+        background: #fff;
+        margin: 0;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+
+    }
+
+    p {
+        display: block;
+        background: #262626;
+        color: #fff;
+        margin: 0;
+        width: 120px;
+        float: right;
+        text-align: center;
+        padding: 5px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+}

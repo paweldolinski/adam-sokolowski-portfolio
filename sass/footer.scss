@@ -1,0 +1,35 @@
+.footer {
+    padding: 10px 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+    color: #fff;
+
+    background: rgba(38, 38, 38, 0.7);
+
+    h1 {
+        font-size: 24px;
+        font-weight: 300;
+        margin: 0;
+
+
+    }
+
+    a {
+        margin: 0 10px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    &__bottom {
+    bottom: 0;
+}
+
+}

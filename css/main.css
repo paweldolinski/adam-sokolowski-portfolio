@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,600");
+* {
+  font-family: 'Oswald'; }
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative; }
+
+h1 {
+  font-weight: 300;
+  margin: 0; }
+
+li {
+  text-decoration: none;
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+section {
+  padding: 0 190px;
+  position: relative; }
+
+.nav__wrapper {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 190px; }
+
+.nav h1 {
+  font-weight: 300; }
+
+.nav ul {
+  display: flex; }
+  .nav ul li {
+    padding: 33px 20px;
+    border-bottom: solid 2px transparent; }
+    .nav ul li:hover {
+      border-color: #262626; }
+
+.home {
+  background: url(../img/home.jpg);
+  background-size: cover;
+  height: 86vh; }
+  .home__caption {
+    position: absolute;
+    bottom: 185px;
+    right: 190px; }
+  .home h1 {
+    display: block;
+    background: #fff;
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px; }
+  .home p {
+    display: block;
+    background: #262626;
+    color: #fff;
+    margin: 0;
+    width: 120px;
+    float: right;
+    text-align: center;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 14px; }
+
+.about {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about.JPG);
+  background-size: cover;
+  height: 90vh;
+  color: #fff; }
+  .about h1 {
+    padding-top: 20px; }
+  .about p {
+    font-size: 16px;
+    font-weight: 200; }
+
+.portfolio {
+  padding: 0; }
+  .portfolio__wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+  .portfolio__item {
+    width: 25%;
+    height: 310px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; }
+    .portfolio__item:hover .portfolio__overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+    .portfolio__item:hover .portfolio__img {
+      transform: scale(1.1);
+      transition: .4s; }
+    .portfolio__item img {
+      width: 100%;
+      height: 100%;
+      transition: .4s; }
+  .portfolio__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.4);
+    display: none;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000; }
+    .portfolio__overlay h1 {
+      font-family: 'Oswald';
+      font-weight: 200; }
+
+.contact {
+  background: url(../img/_DSC3764%20cz.JPG);
+  background-size: cover;
+  height: 86vh;
+  background-position-y: calc(100% - -59px);
+  background-repeat: no-repeat; }
+  .contact__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .contact__wrapper p {
+      margin-bottom: 3px; }
+  .contact__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 45%; }
+    .contact__inputs input {
+      height: 44px;
+      width: 100%;
+      border: solid black 2px;
+      padding: 10px 20px; }
+      .contact__inputs input:active {
+        outline: none; }
+  .contact__message textarea {
+    height: 68%;
+    width: 100%;
+    border: solid black 2px;
+    padding: 10px 20px; }
+    .contact__message textarea:active {
+      outline: none; }
+  .contact__message {
+    width: 45%; }
+  .contact__btn {
+    margin-top: 60px; }
+    .contact__btn button {
+      border: solid black 2px;
+      padding: 5px 35px;
+      cursor: pointer; }
+
+.lb-data .lb-details {
+  display: none; }
+
+.lb-data .lb-close {
+  position: absolute;
+  float: none;
+  top: -30px;
+  right: -30px; }
+
+.lb-outerContainer {
+  background-color: transparent !important; }
+
+.lightbox .lb-image {
+  border: 4px solid transparent !important; }
+
+.footer {
+  padding: 10px 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  left: 0;
+  color: #fff;
+  background: rgba(38, 38, 38, 0.7); }
+  .footer h1 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0; }
+  .footer a {
+    margin: 0 10px; }
+  .footer img {
+    width: 30px;
+    height: 30px; }
+  .footer__bottom {
+    bottom: 0; }

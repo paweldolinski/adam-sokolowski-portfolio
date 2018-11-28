@@ -1,0 +1,55 @@
+.portfolio {
+    padding: 0;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+        width: 25%;
+        height: 310px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+        &:hover .portfolio__overlay {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &:hover .portfolio__img {
+            transform: scale(1.1);
+            transition: .4s;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: .4s;
+    
+        }
+
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.4);
+        display: none;
+        color: #fff;
+        text-shadow: 2px 2px 4px #000;
+        h1 {
+            font-family: 'Oswald';
+            font-weight: 200;
+        }
+
+    }
+}
+
+

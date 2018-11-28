@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>ADAM SOKOLOWSKI</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__wrapper">
+            <div class="nav__logo">
+                <a href='index.html'>
+                    <h1>ADAM SOKOLOWSKI</h1>
+                </a>
+            </div>
+            <div class="nav__nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="contact">
+        <h1>CONTACT</h1>
+        <form method="post" name="contact_form" action="contactForm.php">
+            <div class="contact__wrapper">
+
+                <div class="contact__inputs">
+                    <div class="contact__name">
+                        <p>NAME</p>
+                        <input type="text" name="name" required>
+                        <div class="contac__email">
+                            <p>E-mail</p>
+                            <input type="text" name="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__message">
+                    <p>MESSAGE</p>
+                    <textarea name="message"></textarea>
+                </div>
+            </div>
+            <div class="contact__btn">
+                <button type="submit">Send</button>
+            </div>
+            <!--                <div id="recaptch" class="g-recaptcha" data-sitekey="6LeFj3wUAAAAAMPuTaonrWFym5wcbvPYxp5Hrw6Y"></div>-->
+        </form>
+    </section>
+    <footer class="footer footer__bottom">
+        <div class="footer__name">
+            <h1>ADAM SOKOŁOWSKI PHOTOGRAPHY</h1>
+        </div>
+        <div class="footer__icons">
+            <a href="#">
+                <img src="img/icons/facebook.png">
+            </a>
+            <a href="#">
+                <img src="img/icons/002-instagram.png">
+            </a> <a href="#">
+                <img src="img/icons/004-twitter.png">
+            </a> <a href="#">
+                <img src="img/icons/003-skype.png">
+            </a> <a href="#">
+                <img src="img/icons/001-behance.png">
+            </a>
+        </div>
+    </footer>
+    <script src="script/index.js"></script>
+</body>
+
+</html>
