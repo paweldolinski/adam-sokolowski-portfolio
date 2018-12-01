@@ -1,8 +1,10 @@
 .about {
+    padding: 0 190px;
     background:linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../img/about.JPG);
     background-size: cover; 
     height: 90vh;
     color: #fff;
+    overflow: hidden;
     h1{
         padding-top: 20px;
  

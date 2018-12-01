@@ -21,7 +21,6 @@ a {
   color: inherit; }
 
 section {
-  padding: 0 190px;
   position: relative; }
 
 .nav__wrapper {
@@ -43,9 +42,9 @@ section {
       border-color: #262626; }
 
 .home {
-  background: url(../img/home.jpg);
-  background-size: cover;
-  height: 86vh; }
+  background: black;
+  height: 86vh;
+  overflow: hidden; }
   .home__caption {
     position: absolute;
     bottom: 185px;
@@ -71,11 +70,28 @@ section {
     font-weight: 300;
     font-size: 14px; }
 
+.background-cover, .slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(http://placehold.it/1440x750&text=1); }
+
+.slide {
+  height: 100vh; }
+  .slide--1 {
+    background-image: url(../img/portfolio/gallery01.jpg); }
+  .slide--2 {
+    background-image: url(../img/portfolio/gallery02.jpg); }
+  .slide--3 {
+    background-image: url(../img/portfolio/gallery03.jpg); }
+
 .about {
+  padding: 0 190px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about.JPG);
   background-size: cover;
   height: 90vh;
-  color: #fff; }
+  color: #fff;
+  overflow: hidden; }
   .about h1 {
     padding-top: 20px; }
   .about p {
@@ -120,6 +136,7 @@ section {
       font-weight: 200; }
 
 .contact {
+  padding: 0 190px;
   background: url(../img/_DSC3764%20cz.JPG);
   background-size: cover;
   height: 86vh;
@@ -188,10 +205,14 @@ section {
     font-size: 24px;
     font-weight: 300;
     margin: 0; }
-  .footer a {
-    margin: 0 10px; }
-  .footer img {
+  .footer__icons {
+    display: flex; }
+  .footer__iconBox {
     width: 30px;
-    height: 30px; }
+    height: 30px;
+    margin: 0 10px; }
+  .footer svg {
+    width: 100%;
+    height: 100%; }
   .footer__bottom {
     bottom: 0; }

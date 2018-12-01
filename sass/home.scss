@@ -1,7 +1,7 @@
 .home {
-    background: url(../img/home.jpg);
-    background-size: cover;
+        background: black;
       height: 86vh;
+    overflow: hidden;
 
     &__caption {
         position: absolute;
@@ -36,3 +36,26 @@
         font-size: 14px;
     }
 }
+
+.background-cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(http://placehold.it/1440x750&text=1);
+}
+.slide {
+    height: 100vh;
+    @extend .background-cover;
+    &--1{
+        background-image: url(../img/portfolio/gallery01.jpg);
+    }
+    &--2{
+        background-image: url(../img/portfolio/gallery02.jpg);
+    }
+    &--3{
+        background-image: url(../img/portfolio/gallery03.jpg);
+    }
+}
+
+
+
