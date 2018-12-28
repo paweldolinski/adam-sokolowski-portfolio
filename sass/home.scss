@@ -1,12 +1,22 @@
 .home {
-        background: black;
-      height: 86vh;
+    background: black;
+    height: 100vh;
     overflow: hidden;
 
     &__caption {
         position: absolute;
-        bottom: 185px;
+        bottom: 85px;
         right: 190px;
+
+        @media(max-width: 800px) {
+            right: 50px;
+
+        }
+
+        @media(max-width: 640px) {
+            right: 10px;
+
+        }
 
 
     }
@@ -38,24 +48,34 @@
 }
 
 .background-cover {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(http://placehold.it/1440x750&text=1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://placehold.it/1440x750&text=1);
 }
+
+.slick-slider {
+    padding-top: 100px;
+    background: transparent;
+
+    @media(max-width: 640px) {
+        padding-top: 45px;
+    }
+}
+
 .slide {
     height: 100vh;
     @extend .background-cover;
-    &--1{
-        background-image: url(../img/portfolio/gallery01.jpg);
+
+    &--1 {
+        background-image: url(../img/home.jpg);
     }
-    &--2{
+
+    &--2 {
         background-image: url(../img/portfolio/gallery02.jpg);
     }
-    &--3{
+
+    &--3 {
         background-image: url(../img/portfolio/gallery03.jpg);
     }
 }
-
-
-

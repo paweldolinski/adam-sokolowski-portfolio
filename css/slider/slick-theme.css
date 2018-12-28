@@ -93,6 +93,7 @@
     background-size: cover;
     opacity: 0.8;
     z-index: 1;
+    
 }
 
 
@@ -184,3 +185,13 @@
     opacity: .75;
     color: black;
 }
+@media(max-width: 640px) {
+    .slick-next {
+        right: 0;
+    }
+    .slick-prev {
+        left: 0;
+    }
+    
+
+        }

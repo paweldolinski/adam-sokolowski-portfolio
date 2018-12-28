@@ -1,4 +1,11 @@
 .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    overflow: hidden;
 
     &__wrapper {
         height: 100px;
@@ -6,23 +13,107 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 190px;
+        transition: .3s;
+
+
+        @media(max-width: 1100px) {
+            padding: 0px 20px;
+        }
+
+        @media(max-width: 640px) {
+            align-items: flex-start;
+            height: 25px;
+            padding: 10px 20px;
+        }
     }
 
     h1 {
         font-weight: 300;
+
+        @media(max-width: 640px) {
+            font-size: 20px;
+        }
+
+
     }
 
     ul {
         display: flex;
+        position: relative;
+
+        @media(max-width: 640px) {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            padding: 0;
+            display: block;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
 
         li {
             padding: 33px 20px;
             border-bottom: solid 2px transparent;
+
+            @media(max-width: 640px) {
+                width: 20%;
+                text-align: center;
+                padding: 8px 0;
+                margin: auto;
+            }
 
 
             &:hover {
                 border-color: #262626;
             }
         }
+    }
+
+    &__toggleBtn {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: none;
+        overflow: hidden;
+
+        @media(max-width: 640px) {
+            display: block;
+        }
+
+        span {
+            background: black;
+            height: 4px;
+            width: 100%;
+            display: block;
+            margin: 3px;
+            transition: .3s;
+
+            &.active {
+                &:nth-child(1) {
+                    transform: translate(0px, 7px)rotate(40deg);
+                    transition: 0.7s all;
+
+                }
+
+                &:nth-child(2) {
+                    transform: translate(-30px, 0px);
+                    opacity: 0;
+                    transition: 0.7s all;
+                }
+
+                &:nth-child(3) {
+                    transform: translate(0px, -7px)rotate(-40deg);
+                    transition: 0.7s all;
+                }
+            }
+
+        }
+
+    }
+
+    &__wrapper--toggle {
+        height: 193px;
+        transition: .3s;
     }
 }

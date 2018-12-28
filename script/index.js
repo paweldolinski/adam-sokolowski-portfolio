@@ -9,6 +9,13 @@ $(document).ready(function () {
     function outt() {
         $(this).find('path').css('fill', '#fff')
     }
+    
+        $('.nav__toggleBtn').click(function(){
+        $('.nav__wrapper').toggleClass('nav__wrapper--toggle');
+        $('.nav__toggleBtn span').toggleClass('active')
+            
+        })
+    
 
 
 });
