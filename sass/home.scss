@@ -1,81 +1,82 @@
 .home {
-    background: black;
-    height: 100vh;
-    overflow: hidden;
+  background: black;
+  height: 100vh;
+  overflow: hidden;
 
-    &__caption {
-        position: absolute;
-        bottom: 85px;
-        right: 190px;
+  &__caption {
+    position: absolute;
+    bottom: 85px;
+    right: 190px;
 
-        @media(max-width: 800px) {
-            right: 50px;
-
-        }
-
-        @media(max-width: 640px) {
-            right: 10px;
-
-        }
-
-
+    @media (max-width: 800px) {
+      right: 50px;
     }
 
-    h1 {
-        display: block;
-        background: #fff;
-        margin: 0;
-        padding: 10px;
-        width: 200px;
-        text-align: center;
-        font-weight: 400;
-        font-size: 24px;
-
+    @media (max-width: 640px) {
+      right: 10px;
     }
+  }
 
-    p {
-        display: block;
-        background: #262626;
-        color: #fff;
-        margin: 0;
-        width: 120px;
-        float: right;
-        text-align: center;
-        padding: 5px;
-        font-weight: 300;
-        font-size: 14px;
-    }
+  h1 {
+    display: block;
+    background: #fff;
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  p {
+    display: block;
+    background: #262626;
+    color: #fff;
+    margin: 0;
+    width: 120px;
+    float: right;
+    text-align: center;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 14px;
+  }
 }
 
 .background-cover {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(http://placehold.it/1440x750&text=1);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(http://placehold.it/1440x750&text=1);
 }
 
 .slick-slider {
-    padding-top: 100px;
-    background: transparent;
+  padding-top: 100px;
+  background: transparent;
 
-    @media(max-width: 640px) {
-        padding-top: 45px;
-    }
+  @media (max-width: 640px) {
+    padding-top: 45px;
+  }
 }
 
 .slide {
-    height: 100vh;
-    @extend .background-cover;
+  height: 100vh;
+  @extend .background-cover;
 
-    &--1 {
-        background-image: url(../img/home.jpg);
-    }
+  &--1 {
+    background-image: url(../img/home.jpg);
+  }
 
-    &--2 {
-        background-image: url(../img/portfolio/gallery02.jpg);
+  &--2 {
+    background-image: url(../img/61152636_1274506746037513_2398788158788468736_n.jpg);
+    @media (max-width: 500px) {
+      background-image: url(../img/mobile.jpg);
     }
+  }
 
-    &--3 {
-        background-image: url(../img/portfolio/gallery03.jpg);
+  &--3 {
+    background-image: url(../img/61516330_1611971752269616_8450384163885809664_n.jpg);
+    @media (max-width: 500px) {
+      background-image: url(../img/mobile1.jpg);
     }
+  }
 }
