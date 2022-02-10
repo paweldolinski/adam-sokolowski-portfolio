@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.10.0"
+    "node-sass": "^7.0.0"
   }
 }
 
